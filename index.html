@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speech-text</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    style="
+      overflow-y: hidden;
+      background-image: url(./back.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: multiply;
+      backdrop-filter: drop-shadow(2px 5px 5px #222);
+    "
+  >
+    <div class="container">
+      <div class="main-box">
+        <div class="form-control">
+          <input
+            class="input input-alt"
+            placeholder="Type something"
+            required=""
+            type="text"
+            id="text-input"
+          />
+          <span class="input-border input-border-alt"></span>
+        </div>
+        <button id="speak-button">
+          <span class="transition"></span>
+          <span class="gradient"></span>
+          <span class="label">Speak</span>
+        </button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
